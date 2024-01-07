@@ -1,0 +1,59 @@
+name: nws_yenpth1_ecommerce_flutter
+description: A new Flutter project.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  ##internal packages
+  commons:
+    path: ./packages/commons
+  firebase_remote_config: ^3.0.14
+  firebase_core: ^2.7.1
+  connectivity_plus: ^3.0.3
+  internet_connection_checker: ^1.0.0+1
+  dio: 5.1.0
+  cryptography_flutter: ^2.2.0
+  flutter_native_splash: ^2.2.19
+  shimmer: ^3.0.0
+  page_flip: ^0.2.3
+  carousel_slider: ^4.2.1
+  draggable_bottom_sheet: ^1.0.2
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter_native_splash:
+  color: "#ffffff"
+  color_dark: "#1a1a1a"
+  image: assets/images/splash.png
+  image_dark: assets/images/splash.png
+  android: true
+  ios: true
+  android_gravity: fill
+  ios_content_mode: scaleAspectFill
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Quicksand
+      fonts:
+        - asset: assets/fonts/Quicksand-Bold.ttf
+        - asset: assets/fonts/Quicksand-Light.ttf
+        - asset: assets/fonts/Quicksand-Medium.ttf
+        - asset: assets/fonts/Quicksand-Regular.ttf
+        - asset: assets/fonts/Quicksand-Semibold.ttf
